@@ -1,0 +1,15 @@
+targets:
+  graphql_types_builder:graphql_types_builder:
+    builders:
+      graphql_types_builder|graphqlTypesBuilder:
+        enabled: True
+
+builders:
+  graphqlTypesBuilder:
+    import: 'package:graphql_types_builder/graphql_types_builder.dart'
+    builder_factories: ['graphqlTypesBuilder']
+    build_extensions:
+      .graphql:
+        - .graphql.dart
+    build_to: source
+    auto_apply: root_package
