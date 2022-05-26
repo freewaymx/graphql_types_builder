@@ -1,13 +1,13 @@
 name: graphql_types_builder
 description: Generates GraphQL types from a JSON schema.
 version: 0.1.0
-# homepage: https://www.example.com
+homepage: https://freewaymx.github.io/graphql_types_builder/
 environment:
   sdk: ">=2.16.1 <3.0.0"
 
 dependencies:
   build: ^2.2.1
-  collection:
+  collection: ^1.0.0
   path: ^1.8.0
 
 dev_dependencies:
