@@ -3,6 +3,9 @@ targets:
     builders:
       graphql_types_builder|graphqlTypesBuilder:
         enabled: True
+        generate_for:
+          # TODO: Parse also queries and mutations
+          - lib/src/**/*schema.graphql
 
 builders:
   graphqlTypesBuilder:
@@ -12,4 +15,4 @@ builders:
       .graphql:
         - .graphql.dart
     build_to: source
-    auto_apply: root_package
+    auto_apply: dependents
